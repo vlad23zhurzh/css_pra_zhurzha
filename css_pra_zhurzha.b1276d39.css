@@ -1,0 +1,80 @@
+.people {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+}
+
+@media (width <= 750px) {
+  .people {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+  }
+}
+
+.people__person {
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  width: 211px;
+  height: 275px;
+  transition: transform .5s, background-color .5s;
+  display: flex;
+  position: relative;
+}
+
+.person__photo {
+  position: relative;
+}
+
+.person__img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: border-radius 1s, transform 1s;
+}
+
+.person__rank {
+  color: #8b0000;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  display: flex;
+  position: absolute;
+  bottom: 90px;
+  right: 10px;
+}
+
+.person__details {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.person__details-name {
+  color: #2f4f4f;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.person__details-extra {
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  padding-bottom: 16px;
+  transition: opacity 1s;
+  position: relative;
+}
+
+.person__details-extra-sport {
+  margin-right: 8px;
+}
+
+.person__details-extra-pay {
+  font-weight: 600;
+}
+/*# sourceMappingURL=css_pra_zhurzha.b1276d39.css.map */
